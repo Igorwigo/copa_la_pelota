@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa La Pelota – Chaveamento Oficial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🏆</span>
+                <h1>Copa La Pelota</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#chaveamento">Chaveamento</a></li>
+                    <li><a href="#confrontos">Confrontos</a></li>
+                    <li><a href="#eliminatoria">Eliminatórias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-chaves" onclick="scrollToChaveamento()">Ver Chaves</button>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section id="inicio" class="banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <span class="banner-trophy">🏆</span>
+            <h2>Copa La Pelota</h2>
+            <p>Chaveamento Oficial da Competição</p>
+            <button class="btn-primary" onclick="scrollToChaveamento()">Ver Chaves</button>
+        </div>
+        <div class="banner-info-bottom">
+            <div class="info-item">
+                <span class="info-icon">📅</span>
+                <p>06 de Dezembro de 2025</p>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">🕐</span>
+                <p>18:00</p>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <p>Escola Flamengo Palmas - 212 Sul</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CHAVEAMENTO -->
+    <section id="chaveamento" class="chaveamento">
+        <div class="container">
+            <h2 class="section-title">Chaveamento</h2>
+            <p class="section-subtitle">Confira a divisão das equipes nas Chaves A e B</p>
+            
+            <div class="chaves-grid">
+                <!-- CHAVE A -->
+                <div class="chave chave-a">
+                    <div class="chave-header">
+                        <span class="chave-icon">⚽</span>
+                        <h3>Chave A</h3>
+                    </div>
+                    <div class="times-container">
+                        <div class="time-card">
+                            <span class="time-circle">●</span>
+                            <span class="time-nome">Time 1</span>
+                        </div>
+                        <div class="time-card">
+                            <span class="time-circle">●</span>
+                            <span class="time-nome">Time 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAVE B -->
+                <div class="chave chave-b">
+                    <div class="chave-header">
+                        <span class="chave-icon">⚽</span>
+                        <h3>Chave B</h3>
+                    </div>
+                    <div class="times-container">
+                        <div class="time-card">
+                            <span class="time-circle">●</span>
+                            <span class="time-nome">Time 3</span>
+                        </div>
+                        <div class="time-card">
+                            <span class="time-circle">●</span>
+                            <span class="time-nome">Time 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABELA DE CONFRONTOS -->
+    <section id="confrontos" class="confrontos">
+        <div class="container">
+            <h2 class="section-title">Tabela de Confrontos</h2>
+            <p class="section-subtitle">Horários e confrontos de cada rodada</p>
+
+            <div class="confrontos-grid">
+                <!-- CHAVE A -->
+                <div class="confronto-card">
+                    <div class="confronto-header chave-a-header">
+                        <span class="confronto-icon">📋</span>
+                        <h3>Chave A</h3>
+                    </div>
+                    <div class="confronto-content">
+                        <div class="jogo">
+                            <div class="time-vs">Tigres FC</div>
+                            <div class="horario-vs">
+                                <span class="clock-icon">VS</span>
+                            </div>
+                            <div class="time-vs">Leões da Noite</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAVE B -->
+                <div class="confronto-card">
+                    <div class="confronto-header chave-b-header">
+                        <span class="confronto-icon">📋</span>
+                        <h3>Chave B</h3>
+                    </div>
+                    <div class="confronto-content">
+                        <div class="jogo">
+                            <div class="time-vs">Dragões Vermelhos</div>
+                            <div class="horario-vs">
+                                <span class="clock-icon">VS</span>
+                            </div>
+                            <div class="time-vs">Lobos da Noite</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FASE ELIMINATÓRIA -->
+    <section id="eliminatoria" class="fase-eliminatoria">
+        <div class="container">
+            <h2 class="section-title">Fase Eliminatória</h2>
+
+            <div class="bracket-container">
+                <!-- DISPUTA DO 3º LUGAR -->
+                <div class="bracket-section">
+                    <h3 class="bracket-title">Disputa de 3º Lugar</h3>
+                    <div class="bracket-matchup">
+                        <div class="bracket-team chave-a-border">
+                            <span class="bracket-label">2º Chave A</span>
+                            <span class="bracket-name">Vice de Chave A</span>
+                        </div>
+                        <div class="bracket-vs">vs</div>
+                        <div class="bracket-team chave-b-border">
+                            <span class="bracket-label">2º Chave B</span>
+                            <span class="bracket-name">Vice de Chave B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FINAL -->
+                <div class="bracket-section final-section">
+                    <div class="final-header">
+                        <span class="final-icon">🏆</span>
+                        <h3 class="bracket-title final-title">FINAL</h3>
+                        <span class="final-icon">🏆</span>
+                    </div>
+                    <div class="bracket-matchup final-matchup">
+                        <div class="bracket-team champion chave-a-border">
+                            <span class="bracket-label">1º Chave A</span>
+                            <span class="bracket-name">Campeão de Chave A</span>
+                        </div>
+                        <div class="bracket-vs final-vs">vs</div>
+                        <div class="bracket-team champion chave-b-border">
+                            <span class="bracket-label">1º Chave B</span>
+                            <span class="bracket-name">Campeão de Chave B</span>
+                        </div>
+                    </div>
+                    <div class="final-trophy">
+                        <span class="trophy-emoji">🏆</span>
+                        <p>Campeão Copa La Pelota</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p class="section-subtitle">Dúvidas ou sugestões? Entre em contato conosco</p>
+            <div class="contato-links">
+                <a href="mailto:copalapelota@gmail.com" class="contato-btn">
+                    <span class="btn-icon">📧</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/556399398987" target="_blank" class="contato-btn">
+                    <span class="btn-icon">💬</span>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="footer-icon">🏆</span>
+                    <h3>Copa La Pelota</h3>
+                </div>
+                <p>A maior competição de futebol society da região.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Copa La Pelota. Todos os direitos reservados.</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="https://www.instagram.com/lapelota.fc/" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
