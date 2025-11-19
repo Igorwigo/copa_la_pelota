@@ -52,10 +52,6 @@
                     <label for="filtro-time">Filtrar por Time:</label>
                     <select id="filtro-time" onchange="filtrarJogadores()">
                         <option value="todos">Todos os Times</option>
-                        <option value="Tigres FC">Tigres FC</option>
-                        <option value="Leões da Noite">Leões da Noite</option>
-                        <option value="Dragões Vermelhos">Dragões Vermelhos</option>
-                        <option value="Lobos da Noite">Lobos da Noite</option>
                     </select>
                 </div>
                 <div class="filtro-item">
@@ -93,29 +89,49 @@
 
             <!-- LEGENDA DE NÍVEIS -->
             <div class="legenda-container">
-                <h3>Legenda de Níveis</h3>
+                <h3>Legenda</h3>
                 <div class="legenda-grid">
-                    <div class="legenda-item">
-                        <span class="nivel-badge nivel-lendario">Lendário</span>
-                        <span class="legenda-desc">900+ pontos</span>
+                    <div class="legenda-container">
+                        <h3>Níveis</h3>
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-lendario">Lendário</span>
+                            <span class="legenda-desc">900+ pontos</span>
+                        </div>
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-elite">Elite</span>
+                            <span class="legenda-desc">750-899 pontos</span>
+                        </div>
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-profissional">Profissional</span>
+                            <span class="legenda-desc">600-749 pontos</span>
+                        </div>
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-avancado">Avançado</span>
+                            <span class="legenda-desc">450-599 pontos</span>
+                        </div>
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-intermediario">Intermediário</span>
+                            <span class="legenda-desc">0-449 pontos</span>
+                        </div>
                     </div>
-                    <div class="legenda-item">
-                        <span class="nivel-badge nivel-elite">Elite</span>
-                        <span class="legenda-desc">750-899 pontos</span>
-                    </div>
-                    <div class="legenda-item">
-                        <span class="nivel-badge nivel-profissional">Profissional</span>
-                        <span class="legenda-desc">600-749 pontos</span>
-                    </div>
-                    <div class="legenda-item">
-                        <span class="nivel-badge nivel-avancado">Avançado</span>
-                        <span class="legenda-desc">450-599 pontos</span>
-                    </div>
-                    <div class="legenda-item">
-                        <span class="nivel-badge nivel-intermediario">Intermediário</span>
-                        <span class="legenda-desc">0-449 pontos</span>
+                    <div class="legenda-container">
+                        <h3>Pontos</h3>
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-lendario">Gols</span>
+                            <span class="legenda-desc">3 pontos</span>
+                        </div>
+
+                        <div class="legenda-item">
+                            <span class="nivel-badge nivel-avancado">Assistências</span>
+                            <span class="legenda-desc">1,5</span>
+                        </div>
                     </div>
                 </div>
+                
+            </div>
+
+            <!-- LEGENDA DE PONTUAÇÃO -->
+            
             </div>
         </div>
     </section>
