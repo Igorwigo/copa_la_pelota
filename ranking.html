@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de Jogadores – Copa La Pelota</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/ranking.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🏆</span>
+                <h1>Copa La Pelota</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#chaveamento">Chaveamento</a></li>
+                    <li><a href="index.html#confrontos">Confrontos</a></li>
+                    <li><a href="ranking.html" class="active">Ranking</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-chaves" onclick="window.location.href='index.html#chaveamento'">Ver Chaves</button>
+        </div>
+    </header>
+
+    <!-- BANNER RANKING -->
+    <section class="banner-ranking">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <span class="banner-trophy">⭐</span>
+            <h2>Ranking de Jogadores</h2>
+            <p>Classificação dos melhores jogadores da Copa La Pelota</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE RANKING -->
+    <section class="ranking-section">
+        <div class="container">
+            <div class="ranking-header">
+                <h2 class="section-title">Classificação Geral</h2>
+                <p class="section-subtitle">Ranking atualizado dos jogadores participantes</p>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filtros-container">
+                <div class="filtro-item">
+                    <label for="filtro-time">Filtrar por Time:</label>
+                    <select id="filtro-time" onchange="filtrarJogadores()">
+                        <option value="todos">Todos os Times</option>
+                        <option value="Tigres FC">Tigres FC</option>
+                        <option value="Leões da Noite">Leões da Noite</option>
+                        <option value="Dragões Vermelhos">Dragões Vermelhos</option>
+                        <option value="Lobos da Noite">Lobos da Noite</option>
+                    </select>
+                </div>
+                <div class="filtro-item">
+                    <label for="filtro-nivel">Filtrar por Nível:</label>
+                    <select id="filtro-nivel" onchange="filtrarJogadores()">
+                        <option value="todos">Todos os Níveis</option>
+                        <option value="Lendário">Lendário</option>
+                        <option value="Elite">Elite</option>
+                        <option value="Profissional">Profissional</option>
+                        <option value="Avançado">Avançado</option>
+                        <option value="Intermediário">Intermediário</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- TABELA DE RANKING -->
+            <div class="ranking-table-container">
+                <table class="ranking-table">
+                    <thead>
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Jogador</th>
+                            <th>Time</th>
+                            <th>Nível</th>
+                            <th>Pontos</th>
+                            <th>Gols</th>
+                            <th>Assistências</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ranking-tbody">
+                        <!-- Os jogadores serão inseridos aqui pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- LEGENDA DE NÍVEIS -->
+            <div class="legenda-container">
+                <h3>Legenda de Níveis</h3>
+                <div class="legenda-grid">
+                    <div class="legenda-item">
+                        <span class="nivel-badge nivel-lendario">Lendário</span>
+                        <span class="legenda-desc">900+ pontos</span>
+                    </div>
+                    <div class="legenda-item">
+                        <span class="nivel-badge nivel-elite">Elite</span>
+                        <span class="legenda-desc">750-899 pontos</span>
+                    </div>
+                    <div class="legenda-item">
+                        <span class="nivel-badge nivel-profissional">Profissional</span>
+                        <span class="legenda-desc">600-749 pontos</span>
+                    </div>
+                    <div class="legenda-item">
+                        <span class="nivel-badge nivel-avancado">Avançado</span>
+                        <span class="legenda-desc">450-599 pontos</span>
+                    </div>
+                    <div class="legenda-item">
+                        <span class="nivel-badge nivel-intermediario">Intermediário</span>
+                        <span class="legenda-desc">0-449 pontos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="footer-icon">🏆</span>
+                    <h3>Copa La Pelota</h3>
+                </div>
+                <p>A maior competição de futebol society da região.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Copa La Pelota. Todos os direitos reservados.</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="https://www.instagram.com/lapelota.fc/" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ranking.js"></script>
+</body>
+</html>
