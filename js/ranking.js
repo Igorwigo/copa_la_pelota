@@ -30,7 +30,8 @@ async function buscarDadosAPI() {
         
         // Processar e formatar os dados
         jogadores = dados.map(jogador => {
-            const pontos = parseFloat(jogador.Pontos || 0);
+             const pontosStr = String(jogador.Pontos || '0').replace(',', '.');
+            const pontos = parseFloat(pontosStr || 0);
             const gols = parseInt(jogador.Gols || 0);
             const assistencias = parseInt(jogador['Assistência '] || jogador.Assistencia || jogador['Assistência'] || 0);
             
@@ -219,7 +220,7 @@ function renderizarRanking(jogadoresFiltrados = null) {
                 <span class="stats-valor">${jogador.assistencias}</span>
             </td>
                         <td>
-                <span class="pontos-valor">${jogador.pontos.toFixed(1)}</span>
+                <span class="pontos-valor">${jogador.pontos.toFixed(1).replace('.', ',')}</span>
             </td>
         `;
         
