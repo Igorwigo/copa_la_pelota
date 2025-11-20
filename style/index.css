@@ -125,7 +125,7 @@ body {
 /* ===== BANNER PRINCIPAL ===== */
 .banner {
     background: linear-gradient(135deg, rgba(26, 58, 82, 0.75) 0%, rgba(45, 134, 89, 0.75) 100%),
-                url('../images/gramado.webp');
+                url('../images/gramado.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
