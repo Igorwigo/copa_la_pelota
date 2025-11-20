@@ -211,14 +211,15 @@ function renderizarRanking(jogadoresFiltrados = null) {
             <td>
                 <span class="nivel-badge ${getNivelClass(jogador.nivel)}">${jogador.nivel}</span>
             </td>
-            <td>
-                <span class="pontos-valor">${jogador.pontos.toFixed(1)}</span>
-            </td>
+
             <td>
                 <span class="stats-valor">${jogador.gols}</span>
             </td>
             <td>
                 <span class="stats-valor">${jogador.assistencias}</span>
+            </td>
+                        <td>
+                <span class="pontos-valor">${jogador.pontos.toFixed(1)}</span>
             </td>
         `;
         
